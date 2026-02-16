@@ -107,3 +107,25 @@ footer {
   background: #222;
   color: white;
 }
+/* Navbar Links Styling */
+.nav-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: #0056b3;
+  }
