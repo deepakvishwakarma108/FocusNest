@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>FocusNest - Modern Study Timer Pro</title>
+  <meta name="description" content="FocusNest is a modern Pomodoro and custom study timer for students. Boost focus, productivity, and study smarter." />
+  <meta name="keywords" content="study timer, pomodoro timer, focus timer, timer for students, FocusNest" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>FocusNest</h1>
+      <p>Modern Study Timer Pro 🚀</p>
+    </header>
+
+    <!-- Quote Section -->
+    <section class="quote-box">
+      <h2>Daily Motivation</h2>
+      <p id="quote"></p>
+    </section>
+
+    <!-- Timer Display -->
+    <section class="timer-box">
+      <h2 id="sessionType">Study Session</h2>
+      <div id="timer">25:00</div>
+    </section>
+
+    <!-- Presets -->
+    <section class="presets">
+      <h3>Pomodoro Presets</h3>
+      <button onclick="setPreset(25,5)">25/5</button>
+      <button onclick="setPreset(50,10)">50/10</button>
+      <button onclick="setPreset(90,20)">90/20</button>
+    </section>
+
+    <!-- Custom Timer -->
+    <section class="custom">
+      <h3>Custom Timer</h3>
+      <input type="number" id="studyInput" placeholder="Study (min)" />
+      <input type="number" id="breakInput" placeholder="Break (min)" />
+      <button onclick="setCustomTimer()">Set</button>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls">
+      <button class="start" onclick="startTimer()">Start</button>
+      <button class="pause" onclick="pauseTimer()">Pause</button>
+      <button class="reset" onclick="resetTimer()">Reset</button>
+    </section>
+
+    <!-- Extra Features -->
+    <section class="extras">
+      <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+      <button onclick="toggleFullScreen()">⛶ Fullscreen</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 FocusNest | Study Smart. Stay Focused.</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
