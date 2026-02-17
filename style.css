@@ -108,24 +108,40 @@ footer {
   color: white;
 }
 /* Navbar Links Styling */
+/* ✅ Premium App Style Navbar */
 .nav-links {
-  margin-top: 15px;
+  margin-top: 18px;
   display: flex;
   justify-content: center;
-  gap: 15px;
   flex-wrap: wrap;
+  gap: 12px;
 }
 
+/* Buttons look like Mobile App */
 .nav-links a {
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 10px;
-  background: #007bff;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+
+  border-radius: 999px; /* pill shape */
+
+  background: linear-gradient(135deg, #007bff, #00c6ff);
   color: white;
-  font-weight: bold;
-  transition: 0.3s;
+
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.35);
+
+  transition: all 0.25s ease;
 }
 
+/* Hover effect (Desktop users) */
 .nav-links a:hover {
-  background: #0056b3;
-  }
+  transform: translateY(-3px);
+  box-shadow: 0 10px 18px rgba(0, 123, 255, 0.45);
+  opacity: 0.95;
+}
+
+/* Click effect (Mobile feel) */
+.nav-links a:active {
+  transform: scale(0.96);
+}
