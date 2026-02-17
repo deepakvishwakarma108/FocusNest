@@ -151,3 +151,31 @@ footer {
   box-shadow: 0 6px 18px rgba(255, 87, 34, 0.45);
   transform: scale(1.05);
 }
+/* ✅ Extra Pages Styling (About, Privacy, Contact) */
+
+.page-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: left;
+  line-height: 1.7;
+}
+
+.page-content h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.page-content h2 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.page-content p, 
+.page-content li {
+  font-size: 15px;
+  opacity: 0.9;
+}
