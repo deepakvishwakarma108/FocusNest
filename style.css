@@ -145,3 +145,9 @@ footer {
 .nav-links a:active {
   transform: scale(0.96);
 }
+/* ✅ Current Page Highlight */
+.nav-links a.active {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  box-shadow: 0 6px 18px rgba(255, 87, 34, 0.45);
+  transform: scale(1.05);
+}
